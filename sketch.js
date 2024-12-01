@@ -6,8 +6,8 @@ let thetaMax, phiMax;
 let thetaMaxSlider, phiMaxSlider;
 
 function setup() {
-  canvas = createCanvas(600, 600, WEBGL);
-  canvas.parent("container")
+  canvas = createCanvas(500, 500, WEBGL);
+  canvas.parent("container");
   angleMode(DEGREES);
   colorMode(HSB);
 
@@ -25,7 +25,7 @@ function setup() {
   phiMax = createDiv();
   phiMax.parent("container");
   phiMaxSlider = createSlider(0, 180, 180, 10);
-  phiMaxSlider.parent("container")
+  phiMaxSlider.parent("container");
   phiMax.class("valueDisplay");
   phiMaxSlider.class("Slider");
 
